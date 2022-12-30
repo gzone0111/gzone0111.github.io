@@ -1,10 +1,11 @@
 import Navbar from "../Components/Navbar";
 import useWithoutFlickering from "../utilities/useWithoutFlickering";
-import { Paper, Box, Avatar, Typography, Stack } from "@mui/material";
+import { Paper, Box, Avatar, Typography, Stack, Link, Card } from "@mui/material";
 import Logo from "../Images/icon.gif"
 import { Grid} from "@mui/material";
 import {Button} from "@mui/material";
 import '../index.css'
+
 
 const HomePage = () => {
 
@@ -41,8 +42,16 @@ const HomePage = () => {
                 
                 
             </Box>
-            <Paper  elevation={1} className="background">10\n 123</Paper>
+            <Paper  elevation={1} className="background">
+                <Typography variant="h5" marginLeft={2} marginTop={2}>Recent Posts</Typography>
+                <Stack>
+                    <Card variant="outlined">lol</Card>
+                </Stack>
+            </Paper>
+
+            <Typography align="center">Hosted on <Link href="https://pages.github.com/">Github Pages</Link></Typography> 
         </Stack>
+
      );
 }
  

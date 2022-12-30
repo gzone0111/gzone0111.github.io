@@ -38,7 +38,7 @@ const Navbar = () => {
                 <Toolbar disableGutters>
 
                 <ThemeProvider theme={theme}>
-                    <SvgIcon component={Logo} inheritViewBox sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, }}/>
+                    <SvgIcon component={Logo} inheritViewBox sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, }}></SvgIcon>
                 </ThemeProvider>
 
                 <Link to="/"  style={linkStyle}>
