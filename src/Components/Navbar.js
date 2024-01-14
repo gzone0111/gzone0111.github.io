@@ -1,5 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email'
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -72,6 +73,9 @@ const Navbar = () => {
                     </Button>
                     <Button color='inherit' href="https://www.linkedin.com/in/hong-ting-tsang-dennis/">
                     <LinkedInIcon fontSize="large" />
+                    </Button>
+                    <Button color='inherit' href="mailto:httsangaj@connect.ust.hk">
+                    <EmailIcon fontSize="large" />
                     </Button>
  
                 </Toolbar>

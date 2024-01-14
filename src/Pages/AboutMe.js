@@ -20,6 +20,7 @@ import hkust_img from '../Images/hkust.jpg'
 import ut_img from '../Images/ut.jpg'
 import rov_img from '../Images/rov.jpg'
 
+
 const AboutMe = () => {
 
     const {isPending} = useWithoutFlickering()
@@ -74,38 +75,53 @@ const AboutMe = () => {
                         <TimelineDot color="primary"/>
                         <TimelineConnector />
                         </TimelineSeparator>
-                        
                         <TimelineContent>2022 MATE World Championship ROV Competition -TELEPRESENCE- 4th in Global</TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineOppositeContent color="textSecondary">
+                        2022 Fall-Spring
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                        <TimelineDot color="primary"/>
+                        <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>Promoted as Software Department Leader of ROV team, working on rov for future year. (due to covid)</TimelineContent>
+                    </TimelineItem>
+                    <TimelineItem>
+                        <TimelineOppositeContent color="textSecondary">
+                        2022 Summer-Fall
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                        <TimelineDot color="primary"/>
+                        <TimelineConnector />
+                        </TimelineSeparator>
+                        <TimelineContent>Joined Prof Gary Chan Research Team</TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
                         <TimelineOppositeContent color="textSecondary">
                         2023 Jan-May
                         </TimelineOppositeContent>
                         <TimelineSeparator>
-                        <TimelineDot color="secondary"/>
+                        <TimelineDot color="primary"/>
+                        <TimelineConnector />
                         </TimelineSeparator>
                         <TimelineContent>Exchange at the University of Texas at Austin</TimelineContent>
                     </TimelineItem>
-                    
+                    <TimelineItem>
+                        <TimelineOppositeContent color="textSecondary">
+                        2023 June-Now
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                        <TimelineDot color="secondary"/>
+                        </TimelineSeparator>
+                        <TimelineContent>Joined Prof Song Yangqiu Research Team</TimelineContent>
+                    </TimelineItem>
                     </Timeline>
                 </Grid>
 
 
                 <Grid item xs={6} >
-                <List>
-                    <ListItem disablePadding>
-                        <ListItemText primary="Drafts" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemText primary="Drafts" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemText primary="Drafts" />
-                    </ListItem>
-                    <ListItem disablePadding>
-                        <ListItemText primary="Drafts" />
-                    </ListItem>
-                </List>
+                
 
                 <ImageList variant="masonry" cols={3} gap={8} sx={{mr:2}}>
                         <ImageListItem key={1}>
@@ -113,7 +129,6 @@ const AboutMe = () => {
                             src={`${hkust_img}?w=248&fit=crop&auto=format`}
                             alt={"hkust"}
                             loading="lazy"
-                            onClick={()=>{window.location.href= "http://www.youtube.com";}}
                         />
                         <ImageListItemBar position="below" title={'HKUST'} />
                         </ImageListItem>
