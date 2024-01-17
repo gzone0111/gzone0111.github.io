@@ -75,7 +75,6 @@ const HomePage = () => {
                         <br/>
                         TIn the spring semester of 2022-23, I had the opportunity to participate in the HKUST study abroad program.<br/>
                         I was selected to exchange at UT Austin's College of Natural Science, majoring in <Link href="https://www.cs.utexas.edu/">Computer Science</Link>.<br/>
-                        During my time there, I had the pleasure of meeting friends from around the world, including those from Singapore, Taiwan, and the local US community.<br/>
                         While immersing myself in the Texas culture, I also achieved satisfactory results, obtaining grades all As.
                         <br/>
                         <br/>
