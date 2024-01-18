@@ -12,7 +12,7 @@ import { SvgIcon } from '@mui/material';
 import { ReactComponent as Logo } from '../Images/logo.svg';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
-
+import { lightBlue } from '@mui/material/colors';
 
 const Navbar = () => {
     const linkStyle = {
@@ -68,16 +68,15 @@ const Navbar = () => {
                 <Link to="/projects" style={linkStyle2} >
                 <Typography component="h1"  sx={{mr: 2,color: 'white',textDecoration: "none",boxShadow: "none"}}>Projects</Typography>
                 </Link>
-                    <Button color='inherit' href="https://github.com/gzone0111">
-                    <GitHubIcon  fontSize="large"  />
-                    </Button>
-                    <Button color='inherit' href="https://www.linkedin.com/in/hong-ting-tsang-dennis/">
-                    <LinkedInIcon fontSize="large" />
-                    </Button>
-                    <Button color='inherit' href="mailto:httsangaj@connect.ust.hk">
-                    <EmailIcon fontSize="large" />
-                    </Button>
- 
+                <Button color='inherit' href="https://github.com/gzone0111">
+                <GitHubIcon  fontSize="large"  />
+                </Button>
+                <Button color='inherit' href="https://www.linkedin.com/in/hong-ting-tsang-dennis/">
+                <LinkedInIcon fontSize="large" />
+                </Button>
+                <Button color='inherit' href="mailto:httsangaj@connect.ust.hk">
+                <EmailIcon fontSize="large" />
+                </Button>
                 </Toolbar>
             </Container>
         </AppBar>

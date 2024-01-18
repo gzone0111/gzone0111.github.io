@@ -3,15 +3,26 @@ import useWithoutFlickering from "../utilities/useWithoutFlickering";
 import { Paper, Box, Avatar, Typography, Stack, Link, Card, CardMedia, CardContent } from "@mui/material";
 import Logo from "../Images/icon.gif"
 import { Grid} from "@mui/material";
-import {Button} from "@mui/material";
+import {Button, Tabs, Tab} from "@mui/material";
 import '../index.css';
-import my_image_1 from "../Images/my_1.jpg"
-import my_image_2 from "../Images/IMG_5308.JPEG"
+import my_image_2 from "../Images/IMG_5835.jpeg"
+import * as React from 'react';
+
+// import react notion stuff
+import {Accordion,AccordionSummary,AccordionDetails} from '@mui/material'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
+
 const HomePage = () => {
+    const [value, setValue] = React.useState('one');
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
 
     const {isPending} = useWithoutFlickering()
     return ( 
-        
         <Stack>
             <Navbar/>
             {isPending && <div>loading...</div>}
@@ -90,15 +101,70 @@ const HomePage = () => {
                 
             </Grid>
             <Paper  elevation={1} className="background">
-                <Typography variant="h5" marginLeft={6} marginTop={2}>Research Interest</Typography>
-                <Stack>
-                    
-                </Stack>
-            </Paper>
+                <Typography variant="h5" marginLeft={1} marginTop={2}>Research Interest</Typography>
+                {/* <Tabs
+                value={value}
+                onChange={handleChange}
+                centered
+                >
+                    <Tab
+                        value="one"
+                        label="GNN"
+                    />
+                    <Tab value="two" label="First Order reasoning on KG" />
+                    <Tab value="three" label="Learning on Complex Graphs" />
+                </Tabs> */}
+                <Accordion>
+                    <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                    >
+                    <Typography>GNN</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        <Link href="https://www.notion.so/a71af861e9f546de8596cf6885589e72?v=9bafddf40c314f619a4e79e3d527b5a7&pvs=4">List of papers to read</Link>
+                    </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                    >
+                    <Typography>First Order reasoning on KG</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        <Link href="https://www.notion.so/622666f1c0c44c62b93df39146370c64?v=459185cfa092429a853148b0dddc893c&pvs=4">List of papers to read</Link>
+                    </Typography>
+                    </AccordionDetails>
+                </Accordion>
+                <Accordion>
+                    <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                    >
+                    <Typography>GNN Applications</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                    <Typography>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        malesuada lacus ex, sit amet blandit leo lobortis eget.
 
-            <Typography align="center">Hosted on <Link href="https://pages.github.com/">Github Pages</Link></Typography> 
+                        <Link href="https://www.notion.so/4f656511e1c248a791190b91a4eec9bf?v=d567d240bc764beaa698dba06761d485&pvs=4">List of papers to read</Link>
+                    </Typography>
+                    </AccordionDetails>
+                </Accordion>
+            </Paper>
         </Stack>
-        
      );
 }
  
