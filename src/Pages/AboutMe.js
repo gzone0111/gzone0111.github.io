@@ -19,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 import hkust_img from '../Images/hkust.jpg'
 import ut_img from '../Images/ut.jpg'
 import rov_img from '../Images/rov.jpg'
+import hike_img from '../Images/IMG_6320.JPEG'
 
 
 const AboutMe = () => {
@@ -123,14 +124,13 @@ const AboutMe = () => {
                 <Grid item xs={6} >
                 
 
-                <ImageList variant="masonry" cols={3} gap={8} sx={{mr:2}}>
+                <ImageList variant="masonry" cols={2} gap={8} sx={{mr:2}}>
                         <ImageListItem key={1}>
                         <img
                             src={`${hkust_img}?w=248&fit=crop&auto=format`}
                             alt={"hkust"}
                             loading="lazy"
                         />
-                        <ImageListItemBar position="below" title={'HKUST'} />
                         </ImageListItem>
 
                         <ImageListItem key={2}>
@@ -140,7 +140,7 @@ const AboutMe = () => {
                             alt={"ut"}
                             loading="lazy"
                         />
-                        <ImageListItemBar position="below" title={'UT Autsin'} />
+
                         </ImageListItem>
                         
                         <ImageListItem key={3}>
@@ -150,7 +150,16 @@ const AboutMe = () => {
                             alt={"rov"}
                             loading="lazy"
                         />
-                        <ImageListItemBar position="below" title={'ROV TEAM'} />
+
+                        </ImageListItem>
+                        <ImageListItem key={3}>
+                        <img
+                            
+                            src={`${hike_img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                            alt={"rov"}
+                            loading="lazy"
+                        />
+
                         </ImageListItem>
                 </ImageList>
                 </Grid>

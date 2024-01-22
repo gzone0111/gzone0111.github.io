@@ -100,70 +100,49 @@ const HomePage = () => {
                 </Grid>
                 
             </Grid>
-            <Paper  elevation={1} className="background">
                 <Typography variant="h5" marginLeft={1} marginTop={2}>Research Interest</Typography>
-                {/* <Tabs
-                value={value}
-                onChange={handleChange}
-                centered
-                >
-                    <Tab
-                        value="one"
-                        label="GNN"
-                    />
-                    <Tab value="two" label="First Order reasoning on KG" />
-                    <Tab value="three" label="Learning on Complex Graphs" />
-                </Tabs> */}
                 <Accordion>
                     <AccordionSummary
                     expandIcon={<ArrowDropDownIcon />}
                     aria-controls="panel1-content"
                     id="panel1-header"
                     >
-                    <Typography>GNN</Typography>
+                    <Typography variant="h5">GNN</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                        <Link href="https://www.notion.so/a71af861e9f546de8596cf6885589e72?v=9bafddf40c314f619a4e79e3d527b5a7&pvs=4">List of papers to read</Link>
-                    </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                    expandIcon={<ArrowDropDownIcon />}
-                    aria-controls="panel2-content"
-                    id="panel2-header"
-                    >
-                    <Typography>First Order reasoning on KG</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                        <Link href="https://www.notion.so/622666f1c0c44c62b93df39146370c64?v=459185cfa092429a853148b0dddc893c&pvs=4">List of papers to read</Link>
-                    </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                    <AccordionSummary
-                    expandIcon={<ArrowDropDownIcon />}
-                    aria-controls="panel2-content"
-                    id="panel2-header"
-                    >
-                    <Typography>GNN Applications</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    <Typography variant="body1">
+                    Recent Interest:<br/>
+                    Learning state of the art methods and tricks for learning on graphs.<br/>
+                    Its application from Logical Reasoning, Social Network Analysis etc.<br/><br/>
+                    What is Graphs? <br/>
+                    Graphs are a general language for describing and analyzing entities with relations/interactions.<br/><br/>
 
-                        <Link href="https://www.notion.so/4f656511e1c248a791190b91a4eec9bf?v=d567d240bc764beaa698dba06761d485&pvs=4">List of papers to read</Link>
+                    Goal: To break the limitation of traditional learning methods and learn from the relational structure of graph.<br/><br/>
+
+                    Why GNN?<br/>
+                    GNN is the new frontiers beyond classic NN that only learn on images and sequences.<br/>
+
+                    <Link href="https://hkustconnect-my.sharepoint.com/:p:/g/personal/httsangaj_connect_ust_hk/EWYROQnyazNMu4UO3WdMJZgBpVSdpBy67QRMVi-cuHmdxA?e=C72hNG">PPT</Link>
                     </Typography>
                     </AccordionDetails>
                 </Accordion>
-            </Paper>
+                <Accordion>
+                    <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                    >
+                    <Typography variant="h5">First Order reasoning on KG</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                    <Typography>
+                        Focusing on complex query answering using information from KG (knowlege Graph),<br/>
+                        with special interest in logic on graphs.
+                        <br/>
+                        
+                    </Typography>
+                    </AccordionDetails>
+                </Accordion>
         </Stack>
      );
 }
