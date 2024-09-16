@@ -9,7 +9,7 @@ redirect_from:
 
 
 ## Bibliography
-I am a first-year MPhil student in computer science at the Hong Kong University of Science and Technology,
+I am Hongting Tsang (曾康庭), a first-year MPhil student in computer science at the Hong Kong University of Science and Technology,
 very fortunate to be advised by [Prof. Yangqiu Song](https://cse.hkust.edu.hk/~yqsong/).
 
 Prior to MPhil, I earned my Bachelor of Engineering in Computer Science in HKUST. \\
